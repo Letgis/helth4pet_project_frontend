@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Health 4 Pet · Web Development Project v1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="..\assets\brand/h4p_logo.png" alt="" width="230" height="200">
+      <h2>Cadastro Health 4 Pet</h2>
+    </div>
+
+    <div class="py-5">
+      <form class="needs-validation" novalidate>
+        <div class="row g-3">
+
+          <div class="col-sm-8">
+            <label for="ownerName" class="form-label">Nome Completo</label>
+            <span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="ownerName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Por favor, insira um nome.
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="ownerBirth" class="form-label">Data de Nascimento</label>
+            <span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="ownerBirth" placeholder="DD/MM/AAAA" value="" required>
+            <div class="invalid-feedback">
+              Insira sua data de nascimento.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <span class="text-muted">*</span></label>
+            <div class="input-group has-validation">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" id="email" required>
+            <div class="invalid-feedback">
+              Insira um endereço de email válido.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-7">
+            <label for="password" class="form-label">Senha <span class="text-muted">*</span></label>
+            <input type="password" class="form-control" id="password" required>
+            <div class="invalid-feedback">
+              Insira uma senha.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="phone" class="form-label">Telefone Celular</label>
+            <span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="phone" placeholder="Informe seu celular com DDD" required>
+            <div class="invalid-feedback">
+              Digite um número de telefone.
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="petName" class="form-label">Nome do Pet <span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="petName" required>
+            <div class="invalid-feedback">
+              Digite o nome do seu pet.
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="petBirth" class="form-label">Data de Nascimento</label>
+            <span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="petBirth" placeholder="DD/MM/AAAA" value="" required>
+            <div class="invalid-feedback">
+              Insira sua data de nascimento.
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="petRace" class="form-label">Raça do Pet<span class="text-muted">*</span></label>
+            <select class="form-select" id="petRace" required>
+              <option value="">Selecione...</option>
+              <option> Akita </option>
+              <option> Basset hound </option>
+              <option> Beagle </option>
+              <option> Bichon frisé </option>
+              <option> Boiadeiro australiano </option>
+              <option> Border collie </option>
+              <option> Boston terrier </option>
+              <option> Boxer </option>
+              <option> Buldogue francês </option>
+              <option> Buldogue inglês </option>
+              <option> Bull terrier </option>
+              <option> Cane corso </option>
+              <option> Cavalier king charles spaniel </option>
+              <option> Chihuahua </option>
+              <option> Chow chow </option>
+              <option> Cocker spaniel inglês </option>
+              <option> Dachshund </option>
+              <option> Dálmata </option>
+              <option> Doberman </option>
+              <option> Dogo argentino </option>
+              <option> Dogue alemão </option>
+              <option> Fila brasileiro </option>
+              <option> Golden retriever </option>
+              <option> Husky siberiano </option>
+              <option> Jack russell terrier </option>
+              <option> Labrador retriever </option>
+              <option> Lhasa apso </option>
+              <option> Lulu da pomerânia </option>
+              <option> Maltês </option>
+              <option> Mastiff inglês </option>
+              <option> Mastim tibetano </option>
+              <option> Pastor alemão </option>
+              <option> Pastor australiano </option>
+              <option> Pastor de Shetland </option>
+              <option> Pequinês </option>
+              <option> Pinscher </option>
+              <option> Pit bull </option>
+              <option> Poodle </option>
+              <option> Pug </option>
+              <option> Rottweiler </option>
+              <option> Schnauzer </option>
+              <option> Shar-pei </option>
+              <option> Shiba </option>
+              <option> Shih tzu </option>
+              <option> Staffordshire bull terrier </option>
+              <option> Weimaraner </option>
+              <option> Yorkshire </option>
+              <option> Outro </option>
+            </select>
+            <div class="invalid-feedback">
+              Selecione uma raça válida.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address" class="form-label">Endereço <span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="address" required>  <div class="invalid-feedback">
+              Insira um endereço.
+            </div>
+
+          </div>
+
+          <div class="col-sm-4">
+            <label for="city" class="form-label">Cidade <span class="text-muted">*</span></label>
+            <select class="form-select" id="city" required>
+              <option value="">Selecione...</option>
+              <option> Adamantina </option>
+              <option> Adolfo </option>
+              <option> Aguaí </option>
+              <option> Águas da Prata </option>
+              <option> Águas de Lindóia </option>
+              <option> Águas de Santa Bárbara </option>
+              <option> Águas de São Pedro </option>
+              <option> Americana </option>
+              <option> Américo Brasiliense </option>
+              <option> Amparo </option>
+              <option> Analândia </option>
+              <option> Araraquara </option>
+              <option> Araras </option>
+              <option> Atibaia </option>
+              <option> Auriflama </option>
+              <option> Avaré </option>
+              <option> Barra do Turvo </option>
+              <option> Barretos </option>
+              <option> Barrinha </option>
+              <option> Barueri </option>
+              <option> Bastos </option>
+              <option> Batatais </option>
+              <option> Bauru </option>
+              <option> Bebedouro </option>
+              <option> Bento de Abreu </option>
+              <option> Bernardino de Campos </option>
+              <option> Bertioga </option>
+              <option> Bofete </option>
+              <option> Boituva </option>
+              <option> Botucatu </option>
+              <option> Bragança Paulista </option>
+              <option> Braúna </option>
+              <option> Buritama </option>
+              <option> Buritizal </option>
+              <option> Cabrália Paulista </option>
+              <option> Cabreúva </option>
+              <option> Caçapava </option>
+              <option> Cachoeira Paulista </option>
+              <option> Caconde </option>
+              <option> Cafelândia </option>
+              <option> Caiabu </option>
+              <option> Caieiras </option>
+              <option> Caiuá </option>
+              <option> Cajamar </option>
+              <option> Cajati </option>
+              <option> Cajobi </option>
+              <option> Cajuru </option>
+              <option> Campina do Monte Alegre </option>
+              <option> Campinas </option>
+              <option> Campo Limpo Paulista </option>
+              <option> Campos do Jordão </option>
+              <option> Campos Novos Paulista </option>
+              <option> Cananéia </option>
+              <option> Canas </option>
+              <option> Cândido Mota </option>
+              <option> Capivari </option>
+              <option> Caraguatatuba </option>
+              <option> Carapicuíba </option>
+              <option> Cardoso </option>
+              <option> Casa Branca </option>
+              <option> Catanduva </option>
+              <option> Catiguá </option>
+              <option> Cedral </option>
+              <option> Cosmópolis </option>
+              <option> Cosmorama </option>
+              <option> Cotia </option>
+              <option> Cravinhos </option>
+              <option> Cristais Paulista </option>
+              <option> Cruzália </option>
+              <option> Cruzeiro </option>
+              <option> Cubatão </option>  
+
+            </select>
+            <div class="invalid-feedback">
+              Insira uma cidade válida.
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="state" class="form-label">Estado<span class="text-muted">*</span></label>
+            <select class="form-select" id="state" required>
+              <option value="">Selecione...</option>
+              <option> AC </option>
+              <option> AL </option>
+              <option> AM </option>
+              <option> AP </option>
+              <option> BA </option>
+              <option> CE </option>
+              <option> DF </option>
+              <option> ES </option>
+              <option> GO </option>
+              <option> MA </option>
+              <option> MG </option>
+              <option> MS </option>
+              <option> MT </option>
+              <option> PA </option>
+              <option> PB </option>
+              <option> PE </option>
+              <option> PI </option>
+              <option> PR </option>
+              <option> RJ </option>
+              <option> RN </option>
+              <option> RO </option>
+              <option> RR </option>
+              <option> RS </option>
+              <option> SC </option>
+              <option> SE </option>
+              <option> SP </option>
+              <option> TO </option>
+            </select>
+            <div class="invalid-feedback">
+              Insira um estado válido.
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <label for="cep" class="form-label">CEP<span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="cep" placeholder="" required>
+            <div class="invalid-feedback">
+              CEP obrigatório.
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="same-address">
+          <label class="form-check-label" for="same-address">Endereço de entrega é o mesmo do faturamento</label>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="save-info">
+          <label class="form-check-label" for="save-info">Salvar essas informações para transações futuras</label>
+        </div>
+
+        <hr class="my-4">
+
+        <h4 class="mb-3">Pagamento</h4>
+
+        <div class="my-3">
+          <div class="form-check">
+            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+            <label class="form-check-label" for="credit">Cartão de crédito</label>
+          </div>
+          <div class="form-check">
+            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="debit">Cartão de débito</label>
+          </div>
+          <div class="form-check">
+            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="paypal">PayPal</label>
+          </div>
+          <div class="form-check">
+            <input id="boleto" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="boleto">Boleto</label>
+          </div>
+          <div class="form-check">
+            <input id="Pix" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="Pix">Pix</label>
+          </div>
+
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-md-6">
+            <label for="cc-name" class="form-label">Nome no cartão<span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted"> Nome completo descrito no cartão</small>
+            <div class="invalid-feedback">
+              Nome no cartão obrigatório.
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="cc-number" class="form-label">Número do cartão<span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Número do cartão obrigatório.
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-expiration" class="form-label">Validade<span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Validade obrigatória.
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-cvv" class="form-label">CVV<span class="text-muted">*</span></label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Código de segurança obrigatório.
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="save-terms" required>
+          <label class="form-check-label" for="save-terms"><a href="#">Aceito os termos.</a></label>
+        </div>
+        <br/>
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar</button>
+      </form>
+
+    </div>
+ 
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017–2022 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Ajuda</a></li>
+      <li class="list-inline-item"><a href="#">Privacidade </a></li>
+      <li class="list-inline-item"><a href="#">Termos</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
